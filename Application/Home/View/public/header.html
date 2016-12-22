@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300italic,300" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SDC-FOREVER</title>
+<meta name="description" content="Archer - Responsive Landing Page">
+
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="57x57" href="__IMAGE__/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="__IMAGE__/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="__IMAGE__/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="__IMAGE__/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="__IMAGE__/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="__IMAGE__/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="__IMAGE__/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="__IMAGE__/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="__IMAGE__/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="__IMAGE__/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="__IMAGE__/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="__IMAGE__/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="__IMAGE__/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="__IMAGE__/favicons/manifest.json">
+<link rel="shortcut icon" href="__IMAGE__/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="__IMAGE__/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="__IMAGE__/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!--Favicon end-->
+
+<link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+<link href="__CSS__/font-awesome.min.css" rel="stylesheet">
+<link href="__CSS__/magnific-popup.css" rel="stylesheet">
+<link href="__CSS__/owl.carousel.css" rel="stylesheet">
+<link href="__CSS__/main.css" rel="stylesheet">
+<style type="text/css" media="screen">
+  *{font-family: "微软雅黑"}
+  .font-fff{color: #ffffff}
+</style>
+</head>
+<body>
+
+<!--hero section-->
+
+<header class="hero-section"> 
+  
+  <!--navigation-->
+  
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="450">
+    <div class="container">
+      <div class="navbar-header"> <a class="navbar-brand" href=""><img class="logo" alt="logo" src="__IMAGE__/logo.svg"><img class="logo-nav" alt="logo-nav" src="__IMAGE__/logo-nav.svg"></a> </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden-xs hidden-sm"><a href="{:U('/')}#company">公司简介</a></li>
+        <li class="hidden-xs hidden-sm"><a href="{:U('/')}#introduction">产品概述</a></li>
+        <li class="hidden-xs hidden-sm"><a href="{:U('/')}#sdc">SDC</a></li>
+        <li class="hidden-xs hidden-sm"><a href="{:U('index/buy')}">购买</a></li>
+        <li class="hidden-xs hidden-sm"><a href="{:U('member/memberInfo')}">用户中心</a></li>
+        <if condition="session('uid')" >
+        <li><a href="javascript:">{:session('nickname')}</a></li>
+        <li class="hidden-xs"><a href="{:U('member/logout')}"  class="btn btn-nav">退出</a></li>
+        <else/>
+        <li class="hidden-xs"><a href="{:U('index/signin')}">登录</a></li>
+        <li><a href="{:U('index/signup')}" class="btn btn-nav">注册</a></li>
+        </if>
+        <li class="hidden-md hidden-lg"><a id="toggle"><i class="fa fa-bars fa-2x"></i><i class="fa fa-times fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--navigation end--> 
+  
+  <!--mobile navigation-->
+  
+  <div class="mobile-nav-overlay hidden-md hidden-lg" id="mobile-nav-overlay">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="{:U('/')}#company">公司简介</a></li>
+        <li><a href="{:U('/')}#introduction">产品概述</a></li>
+        <li><a href="{:U('/')}#sdc">SDC</a></li>
+        <li><a href="{:U('index/buy')}">购买</a></li>
+        <li><a href="{:U('member/memberInfo')}">用户中心</a></li>
+        <if condition="session('uid')" >
+        <li class="hidden-xs"><a href="javascript:">{:session('nickname')}</a></li>
+        <li><a href="{:U('member/logout')}">退出</a></li>
+        <else/>
+        <li class="hidden-xs"><a href="{:U('index/signin')}">登录</a></li>
+        </if>
+      </ul>
+    </nav>
+  </div>
+  
+  <!--mobile navigation end--> 
+  
+  
+  <!--welcome message-->
+  
+  <section class="container text-center welcome-message welcome-message-imp" id="home">
+    <!-- <div class="row">
+      <div class="col-md-12" style="height: 200px">
+        <h1>Do you like diamonds?</h1>
+        <h2 style="font-style:italic;font-weight: normal;">Welome to NSDC</h2>
+        <a href="signup.html" class="btn btn-cta-hero">EXPLORE MORE...</a>
+      </div>
+    </div> -->
+  </section>
+  
+  <!--welcome message end--> 
+
+</header>
+
+<!--hero section end <?php /*{首页头部没有分离} */?> -->
