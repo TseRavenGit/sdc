@@ -27,6 +27,11 @@ class MemberController extends Controller {
         $field = 'id,status,token_exptime,balance,balance_e';
         $userClass = new User();
         $user = $userClass->getUser($where,$field);
+        if(empty($user)){
+            //清楚所有session
+            session(null);
+            $this->error('用户已被注销！',U('index/signup'));
+        }
         $userStatus = $user['status'];
         $tokenExptime = $user['token_exptime'];
         $balance = $user['balance'];
@@ -195,7 +200,7 @@ class MemberController extends Controller {
 			}else{
 
                 $User->token_exptime = time()+60*60*24;//过期时间为24小时后
-                $token = md5($lastId.'sdc'.$User->password);
+                $token = md5(time().'sdc'.$User->password);
                 $User->token = $token;
                 $email = $User->email;
                 $nickname = $User->nickname;
@@ -208,7 +213,7 @@ class MemberController extends Controller {
 
                     //发送邮件
 					//$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
-                    $link = U('member/activation',array('token'=>$token));
+                    $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$token));
 			    	
                     $this->sendEmail($email,$nickname,$link);
 
@@ -349,6 +354,7 @@ class MemberController extends Controller {
                 $this->success('已经激活成功了！',U('Index/signin'));
             }
             $nowTime = time();
+
             if($nowTime > $user['token_exptime']){
                 $this->error('激活时间已过，请登录邮箱重新发送激活邮件', U('Index/signin'));
             }else{
