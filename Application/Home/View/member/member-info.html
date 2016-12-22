@@ -1,0 +1,173 @@
+
+<include file="Public/header" />
+
+<!--learn more-->
+
+<div class="learn-more section-spacing section-spacing2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 sdc-user-left">
+        <div>
+            <include file="member-menu" />
+        </div>
+
+      </div>
+      <div class="col-md-6 sdc-user-right">
+
+        <div class="sdc-email-notice">
+          <if condition="$emailGo eq 2">
+            <div class="alert alert-warning alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                &times;
+              </button>
+              您的邮箱还未激活，请前往邮箱激活！
+            </div>
+          <elseif condition="$emailGo eq 1" />
+
+            <div class="alert alert-warning alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                &times;
+              </button>
+              <a href="{$link}" class="alert-link">激活时间已过，点击重新发送激活邮件！</a>
+            </div>
+
+          <else/>
+
+          </if>
+        </div>
+        <div class="user-right-top">
+            <div class="yue pull-left">
+                <p>总资产</p>
+                <span id="m_balance_t">{:number_format($balance+$balance_e, 2, '.', '')}</span>
+                <a class="btn-out" href="{:U('member/turnOut')}">转出</a>
+            </div>
+            <div class="niansy pull-left">
+                <p>年收益</p>
+                <h2>{$income*100}%</h2>
+            </div>
+            <if condition="$canCreate eq 2">
+              <div class="jgj pull-left" id="create">
+                  <p>交割卷</p>
+                  <h2>立即生成</h2>
+              </div>
+            <else />
+              <div class="jgj-hide pull-left">
+                  <p>交割卷</p>
+                  <h2>立即生成</h2>
+              </div>
+            </if>
+        </div>
+        <div style="width: 100%;clear: both"></div>
+
+        <div class="user-right-mid">
+          <p>可用资产：<span class="font_red" id="m_balance">{$balance}</span></p>
+        </div>
+
+        <div class="user-daiyong">
+          <p class="ssp-p">待用资产：<span class="font_red" id="m_balance_e">{$balance_e}</span>
+            <a class="btn user-balance-buy" href="{:U('index/buy')}">购买</a>
+            <a href="{:U('member/checkListOut')}">转出/入记录</a>
+          </p>
+          <p class="ssp-p2">(待用资产指别人转入到您账户上的资产，若您想启用这笔资产，请在官网购买同等数量的资产)</p>
+        </div>
+
+        <div class="user-right-mid user-jgj-small">
+          <p>交割卷：<span id="m_volume"></span><a href="{:U('member/checkVolume')}">查看</a></p>
+        </div>
+
+        <div class="user-right-bot">
+          <p>购买记录</p>
+          <table>
+            <tr align="center" class="table-header">
+              <td>时间</td>
+              <td>资产类型</td>
+              <td>价格(元)</td>
+              <td>数量</td>
+              <td>金额(元)</td>
+              <td>状态</td>
+            </tr>
+            <foreach name='list' item='var' >
+            <tr align="center">
+              <td>{:date('Y/m/d',$var['add_time'])}</td>
+              <td>{$var['shop_type']}</td>
+              <td>{$var['shop_price']}</td>
+              <td>{$var['shop_num']}</td>
+              <td>{$var['shop_total']}</td>
+              <td><if condition="$var['status'] eq 1">未付款<elseif condition="$var['status'] eq 2"/>交易成功</if></td>
+            </tr>
+            </foreach>
+            <tr>
+              <td align="center" colspan="6">{$page}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--learn more end--> 
+
+<!--Copyright terms-->
+
+<include file="Public/footer"/>
+
+<!--Copyright terms end--> 
+
+<script src="__JS__/jquery-2.2.1.min.js"></script> 
+<script src="__JS__/bootstrap.min.js"></script> 
+<script src="__JS__/jquery.magnific-popup.min.js"></script> 
+<script src="__JS__/owl.carousel.min.js"></script> 
+<script src="__JS__/jquery.waypoints.min.js"></script> 
+<script src="__JS__/jquery.animateNumber.min.js"></script> 
+<script src="__JS__/jquery.ajaxchimp.min.js"></script> 
+<script src="__JS__/tweetie.min.js"></script> 
+<!--[if IE 9]>
+<script src="js/placeholders.min.js"></script>
+<![endif]--> 
+<script src="__JS__/main.js"></script> 
+<!-- 
+<script async src="http://platform.twitter.com/widgets.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
+
+<script src="__JS__/gmap.js"></script> -->
+
+<script src="__JS__/retina.min.js"></script>
+</body>
+
+<script type="text/javascript">
+  function checkInt(o){ 
+    var theV,theP;
+    var num = document.getElementById('num');
+    var onePrice = document.getElementById('onePrice');
+    var payable = document.getElementById('payable');
+    theV = isNaN(parseInt(o.value))?0:parseInt(o.value); 
+    if(theV != o.value){
+      o.value = theV;
+    } 
+    theP = num.value*onePrice.innerHTML;
+    payable.value = theP.toFixed(2);
+  } 
+
+
+  $(function(){
+    $('#create').click(function(){
+        var purl = "{:U('member/createVolume')}";
+        $.ajax({
+           type: "POST",
+           url: purl,
+           data: "uid={$uid}",
+           success: function(result){
+              if(result.code == 1){
+                $("#m_balance_t").text(result.data.m_balance_t);
+                $("#m_balance").text(result.data.balance);
+                $("#m_volume").text(result.data.volume);
+              }
+              alert(result.msg);
+           }
+        });
+    });
+    
+  });
+</script>
+</html>
+
