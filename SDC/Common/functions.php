@@ -1569,10 +1569,12 @@ function sendMail($to, $subject, $content) {
     $mail->IsHTML(C('MAIL_ISHTML'));//是否是HTML字样
     $mail->Subject = $subject;// 邮件标题信息
     $mail->Body = $content;//邮件内容
+    $mail->Send();
     // 发送邮件
-    if (!$mail->Send()) {
+    /*if (!$mail->Send()) {
         return FALSE;
     } else {
+        
         return TRUE;
-    }
+    }*/
 }

@@ -33,7 +33,7 @@ class OrderController extends Controller {
         if(empty($num) || empty($price) || empty($payable)){
             $this->error('未知错误，请重新购买！');
         }
-        if($num < 0 && $num == 0){
+        if($num < 100 || $num == 0){
             $this->error('数量错误，请重新购买！');
         }
 

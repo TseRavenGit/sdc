@@ -322,10 +322,9 @@ class MemberController extends Controller {
         }
         //$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
         $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$data['token']));
-                    
+
         $this->sendEmail($user['email'],$user['nickname'],$link);
 
-	    
 	    $this->success('已经发送了激活邮件，请尽快前往邮箱激活！',U('memberInfo'));
 	    
     }
@@ -558,11 +557,11 @@ class MemberController extends Controller {
     protected function sendEmail($email,$nickname,$link){
         
         //$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
-        $str =  '您好！<p></p>'.
-                '感谢您注册帐户！<p></p>'.
-                '帐户需要激活才能使用，赶紧激活成为SDC的正式一员吧:)<p></p>'.
-                '点击下面的链接立即激活帐户(或将网址复制到浏览器中打开):<p></p>'.
-                $link;
+        $str =  '<p>您好！</p>'.
+                '<p>感谢您注册帐户！</p>'.
+                '<p>帐户需要激活才能使用，赶紧激活成为SDC的正式一员吧:)</p>'.
+                '<p>点击下面的链接立即激活帐户(或将网址复制到浏览器中打开):</p>'.
+                '<a href="'.$link.'">'.$link.'</a>';
 
 
         $result = sendMail($email, 'SDC-注册邮件-' . $nickname, $str);
