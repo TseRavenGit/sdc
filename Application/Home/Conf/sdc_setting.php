@@ -7,7 +7,7 @@ return array(
     //SDC相关配置
   
     'THINK_SDC' => array(  
-        'SDC_PRICE'   => 1.56, //SDC购买价格
+        'SDC_PRICE'   => 40.00, //SDC购买价格
         'EW_DISCOUNT' => 0.95, //1w以上折扣 *95%
         'WW_DISCOUNT' => 0.92, //5w以上折扣 *92%
         'SW_DISCOUNT' => 0.88, //10w以上折扣 *88%

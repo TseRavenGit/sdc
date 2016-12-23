@@ -43,7 +43,7 @@ class PayController extends Controller {
 		//商户订单号
 		$data['orderNo'] = '20161220034109';//$_POST["orderNo"];
 		// 商户订单日期
-		$data['tradeDate'] = '20161220';//$_POST["tradeDate"];
+		$data['tradeDate'] = '20161222';//$_POST["tradeDate"];
 		// 商户交易金额
 		$data['amt'] = 0.01;//$_POST["amt"];
 		// 商户参数
