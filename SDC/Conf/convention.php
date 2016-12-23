@@ -168,8 +168,8 @@ return  array(
     'MAIL_SMTP'                     =>TRUE,
     'MAIL_HOST'                     =>'smtp.163.com',//邮件发送SMTP服务器
     'MAIL_SMTPAUTH'                 =>TRUE,
-    'MAIL_USERNAME'                 =>'tselove123@163.com',//SMTP服务器登陆用户名
-    'MAIL_PASSWORD'                 =>'tse0529',//SMTP服务器登陆密码
+    'MAIL_USERNAME'                 =>'sdcforever@163.com',//SMTP服务器登陆用户名
+    'MAIL_PASSWORD'                 =>'sdcforever2016',//SMTP服务器登陆密码
     'MAIL_SECURE'                   =>'tls',
     'MAIL_CHARSET'                  =>'utf-8',
     'MAIL_ISHTML'                   =>TRUE,

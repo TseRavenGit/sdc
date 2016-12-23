@@ -3,11 +3,10 @@
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300italic,300" rel="stylesheet">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Archer - Responsive Landing Page</title>
+<title>SDC-FOREVER</title>
 <meta name="description" content="Archer - Responsive Landing Page">
 
 <!--Favicon-->
@@ -110,6 +109,7 @@
 </header>
 
 <!--hero section end <?php ?> -->
+
 <!--learn more-->
 
 <div class="learn-more section-spacing section-spacing2">

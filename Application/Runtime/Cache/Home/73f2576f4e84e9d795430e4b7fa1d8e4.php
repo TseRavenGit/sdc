@@ -2,7 +2,6 @@
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
 <html class="sl-page">
 <head>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300italic,300" rel="stylesheet">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,14 +81,7 @@
   
   <!--Copyright terms-->
   
-   <footer class="copyright-terms">
-  <div class="container">
-    <div class="row">
-      <!-- <small> &copy; 2016 Archer. All rights reserved.</small>  -->
-      
-    </div>
-  </div>
-</footer>
+   
   
   <!--Copyright terms end--> 
   

@@ -1,0 +1,88 @@
+
+<include file="Public/header" />
+
+<!--learn more-->
+
+<div class="learn-more section-spacing section-spacing2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 sdc-user-left">
+        <div>
+            <include file="member-menu" />
+        </div>
+      </div>
+      <div class="col-md-6 sdc-user-right">
+        <div class="user-right-pwd">
+          <form action="{:U('memberPwd')}" method="post" class="form-horizontal" role="form">
+            <input type="hidden" name="id" value="{$userinfo['id']}">
+            <div class="form-group">
+              <label for="firstname" class="col-sm-2 control-label">输入新密码</label>
+              <div class="col-sm-8">
+                <input type="password" class="form-control" id="password" name="password" placeholder="密码长度为6-20位" pattern=".{6,20}" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastname" class="col-sm-2 control-label">再次输入新密码</label>
+              <div class="col-sm-8">
+                <input type="password" class="form-control" id="confpassword" name="confpassword" placeholder="再次输入新密码" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default member-btn">确认修改</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--learn more end--> 
+
+
+<!--Copyright terms-->
+
+<include file="Public/footer"/>
+
+<!--Copyright terms end--> 
+
+<!--contact form modal end--> 
+
+<script src="__JS__/jquery-2.2.1.min.js"></script> 
+<script src="__JS__/bootstrap.min.js"></script> 
+<script src="__JS__/jquery.magnific-popup.min.js"></script> 
+<script src="__JS__/owl.carousel.min.js"></script> 
+<script src="__JS__/jquery.waypoints.min.js"></script> 
+<script src="__JS__/jquery.animateNumber.min.js"></script> 
+<script src="__JS__/jquery.ajaxchimp.min.js"></script> 
+<script src="__JS__/tweetie.min.js"></script> 
+<!--[if IE 9]>
+<script src="js/placeholders.min.js"></script>
+<![endif]--> 
+<script src="__JS__/main.js"></script> 
+<!-- 
+<script async src="http://platform.twitter.com/widgets.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
+
+<script src="__JS__/gmap.js"></script> -->
+
+<script src="__JS__/retina.min.js"></script>
+</body>
+
+<script type="text/javascript">
+  function checkInt(o){ 
+    var theV,theP;
+    var num = document.getElementById('num');
+    var onePrice = document.getElementById('onePrice');
+    var payable = document.getElementById('payable');
+    theV = isNaN(parseInt(o.value))?0:parseInt(o.value); 
+    if(theV != o.value){
+      o.value = theV;
+    } 
+    theP = num.value*onePrice.innerHTML;
+    payable.value = theP.toFixed(2);
+  } 
+</script>
+</html>
+

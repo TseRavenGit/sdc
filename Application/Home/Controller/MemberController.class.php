@@ -195,7 +195,7 @@ class MemberController extends Controller {
 			}else{
 
                 $User->token_exptime = time()+60*60*24;//过期时间为24小时后
-                $token = md5($lastId.'sdc'.$User->password);
+                $token = md5(time().'sdc'.$User->password.rand(1,9999));
                 $User->token = $token;
                 $email = $User->email;
                 $nickname = $User->nickname;
@@ -208,7 +208,7 @@ class MemberController extends Controller {
 
                     //发送邮件
 					//$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
-                    $link = U('member/activation',array('token'=>$token));
+                    $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$token));
 			    	
                     $this->sendEmail($email,$nickname,$link);
 
