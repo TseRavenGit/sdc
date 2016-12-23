@@ -116,7 +116,7 @@ class MemberController extends Controller {
                     $this->error('修改失败！');
                 }
             }
-            die;
+
         }else{
             exit("非法操作！");
         }
@@ -200,7 +200,7 @@ class MemberController extends Controller {
 			}else{
 
                 $User->token_exptime = time()+60*60*24;//过期时间为24小时后
-                $token = md5(time().'sdc'.$User->password);
+                $token = md5(time().'sdc'.$User->password.rand(1,9999));
                 $User->token = $token;
                 $email = $User->email;
                 $nickname = $User->nickname;
@@ -215,9 +215,12 @@ class MemberController extends Controller {
 					//$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
                     $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$token));
 			    	
-                    $this->sendEmail($email,$nickname,$link);
-
-					$this->success('注册成功,正跳转至用户中心...', U('memberInfo'));
+                    $l = $this->sendEmail($email,$nickname,$link);
+                    if($l){
+                        $this->success('注册成功,正跳转至用户中心...', U('memberInfo'));
+                    }else{
+                        $this->success('注册成功,但是邮箱发送失败！请联系管理员解决...', U('memberInfo'));
+                    }
 				}else{
 					$this->error('注册失败');
 				}
@@ -309,23 +312,23 @@ class MemberController extends Controller {
             $this->error('操作失败,已经激活过了！');
         }
 
-        $data['token'] = md5($user['id'].'sdc'.$user['password']);
-
         if(empty($data['token'])){
-            $this->error('操作失败，未知错误！');
-        }
-        //储存token 更新token激活时间
-        $data['token_exptime'] = time()+60*60*24;//过期时间为24小时后
-        $n = M('member')->where($where)->save($data);
-        if(!$n){
             $this->error('操作失败，未知错误！');
         }
         //$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
         $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$data['token']));
 
-        $this->sendEmail($user['email'],$user['nickname'],$link);
-
-	    $this->success('已经发送了激活邮件，请尽快前往邮箱激活！',U('memberInfo'));
+        $l = $this->sendEmail($user['email'],$user['nickname'],$link); //发送邮件
+        if($l){
+            //储存token 更新token激活时间
+            $data['token'] = md5(time().'sdc'.$user['password'].rand(1,9999));
+            $data['token_exptime'] = time()+60*60*24;//过期时间为24小时后
+            M('member')->where($where)->save($data);
+            $this->success('已经发送了激活邮件，请尽快前往邮箱激活！',U('memberInfo'));
+        }else{
+            $this->error('操作失败，未知错误！');
+        }
+        
 	    
     }
 
@@ -340,7 +343,6 @@ class MemberController extends Controller {
             if(!$urlToken){
                 exit("非法操作！");
             }
-            //$user = M('Member')->field('id,token_exptime,status')->where($where)->find();
 
             $where['token'] = $urlToken;
             $field = 'id,token_exptime,status';
@@ -361,6 +363,8 @@ class MemberController extends Controller {
                 $n = M('member')->where('id='.$user['id'])->save($data);
                 if($n){
                     $this->success('激活成功！',U('Index/index'));
+                }else{
+                    $this->error('未知错误，激活失败！');
                 }
                 
             }
@@ -459,12 +463,12 @@ class MemberController extends Controller {
 
             if ($b){
                 // 提交事务
-                $this->success('转出成功！',U('member/memberInfo'));
                 $User->commit();
+                $this->success('转出成功！',U('member/memberInfo'));
             }else{
                 // 事务回滚
-                $this->error('转出失败！');
                 $User->rollback();
+                $this->error('转出失败！');
             }
         }else{
             exit('非法操作！');
@@ -562,9 +566,11 @@ class MemberController extends Controller {
                 '<p>帐户需要激活才能使用，赶紧激活成为SDC的正式一员吧:)</p>'.
                 '<p>点击下面的链接立即激活帐户(或将网址复制到浏览器中打开):</p>'.
                 '<a href="'.$link.'">'.$link.'</a>';
-
-
-        $result = sendMail($email, 'SDC-注册邮件-' . $nickname, $str);
+        
+        $subject = 'SDC-激活邮件';
+        $fromName = 'SDC官网';
+        $result = send_email($email,$subject,$str,$fromName);//新方法
+        return $result;
 
     }
     

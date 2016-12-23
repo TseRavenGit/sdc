@@ -1549,32 +1549,31 @@ function in_array_case($value,$array){
     return in_array(strtolower($value),array_map('strtolower',$array));
 }
 
-//邮件发送
-function sendMail($to, $subject, $content) {
-    Vendor('phpmailer.class#phpmailer');
-    $mail = new \PHPMailer(); //实例化
+//邮件发送 配置文件 SDC convention
+function send_email($to,$subject,$body,$fromname){
+    import('Org.Email.PHPMailer');
+    $mail             = new PHPMailer(); //new一个PHPMailer对象出来
+    $mail->CharSet ="utf-8";//设定邮件编码，默认ISO-8859-1，如果发中文此项必须设置，否则乱码
     // 装配邮件服务器
     if (C('MAIL_SMTP')) {
         $mail->IsSMTP();  //启动SMTP
     }
-    $mail->Host = C('MAIL_HOST'); //SMTP服务器地址
-    $mail->SMTPAuth = C('MAIL_SMTPAUTH'); //启用SMTP认证
-    $mail->Username = C('MAIL_USERNAME');//邮箱名称
-    $mail->Password = C('MAIL_PASSWORD');//邮箱密码
-    $mail->SMTPSecure = C('MAIL_SECURE');//发件人地址
-    $mail->CharSet = C('MAIL_CHARSET');//邮件头部信息
-    $mail->From = C('MAIL_USERNAME');//发件人是谁
-    $mail->AddAddress($to);
-    $mail->FromName = 'SDC-激活邮件';//设置每行字符长度
-    $mail->IsHTML(C('MAIL_ISHTML'));//是否是HTML字样
-    $mail->Subject = $subject;// 邮件标题信息
-    $mail->Body = $content;//邮件内容
-    $mail->Send();
-    // 发送邮件
-    /*if (!$mail->Send()) {
-        return FALSE;
-    } else {
-        
-        return TRUE;
-    }*/
+    $mail->SMTPDebug  = 1;// 启用SMTP调试功能1 = errors and messages 2 = messages only
+    $mail->SMTPAuth   = true;              // 启用 SMTP 验证功能
+    $mail->SMTPSecure = "smtp";                 // 安全协议
+    $mail->Host       = C('MAIL_HOST');      // SMTP 服务器
+    $mail->Port       = 25;                   // SMTP服务器的端口号
+    $mail->Username   = C('MAIL_USERNAME');  // SMTP服务器用户名
+    $mail->Password   = C('MAIL_PASSWORD');   // SMTP服务器密码
+    $mail->SetFrom(C('MAIL_USERNAME'), $fromname);
+    $mail->AddReplyTo(C('MAIL_USERNAME'),$fromname);//增加回复标签，参数1地址，参数2名称
+    $mail->Subject    = $subject;//邮件标题
+    $mail->MsgHTML($body);//邮件正文
+    $mail->AddAddress($to,' ');//增加收件人 参数1为收件人邮箱，参数2为收件人称呼
+    if(!$mail->Send()){
+        return false;
+    }else {
+        $mail->SmtpClose();
+        return true;
+    }
 }
