@@ -305,25 +305,25 @@ class MemberController extends Controller {
         }
 
         $where['id'] = $userinfo['id'];
-        $field = 'id,nickname,status,email,password';
+        $field = 'id,nickname,status,email,password,token';
         $userClass = new User();
         $user = $userClass->getUser($where,$field);
         if($user['status'] == 1){
             $this->error('操作失败,已经激活过了！');
         }
 
-        if(empty($data['token'])){
+        if(empty($user['token'])){
             $this->error('操作失败，未知错误！');
         }
         //$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
-        $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$data['token']));
+        $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$user['token']));
 
         $l = $this->sendEmail($user['email'],$user['nickname'],$link); //发送邮件
         if($l){
             //储存token 更新token激活时间
-            $data['token'] = md5(time().'sdc'.$user['password'].rand(1,9999));
-            $data['token_exptime'] = time()+60*60*24;//过期时间为24小时后
-            M('member')->where($where)->save($data);
+            $user['token'] = md5(time().'sdc'.$user['password'].rand(1,9999));
+            $user['token_exptime'] = time()+60*60*24;//过期时间为24小时后
+            M('member')->where($where)->save($user);
             $this->success('已经发送了激活邮件，请尽快前往邮箱激活！',U('memberInfo'));
         }else{
             $this->error('操作失败，未知错误！');
