@@ -36,8 +36,7 @@ return array(
 		// Mo宝支付分配给商户的账号
 		'MERCHANT_ACC'	=>	'210001510010949',
 		// 商户通知地址（请根据自己的部署情况设置下面的路径）
-		//'NOTTIFY_URL'	=>	'http://192.168.20.207/mbpe/callback.php',
-		'NOTTIFY_URL'	=>	U('pay/callback'),
+		//'NOTTIFY_URL'	=>	'http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/pay/callback',
 
 	),
 );  

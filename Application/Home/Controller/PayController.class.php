@@ -85,7 +85,7 @@ class PayController extends Controller {
 
 
 
-    /*public function callback(){
+    public function callback(){
 
         $mp = $this->getMobSetting();
     	// 请求数据赋值
@@ -156,7 +156,7 @@ class PayController extends Controller {
 
 			/*商户需要在此处判定通知中的订单状态做后续处理*/
 			/*由于页面跳转同步通知和异步通知均发到当前页面，所以此处还需要判定商户自己系统中的订单状态，避免重复处理。*/
-	/*		
+			
 			return true;
 		}
 		else
@@ -165,7 +165,7 @@ class PayController extends Controller {
 			echo "验证签名失败";
 			return false;
 		}
-    }*/
+    }
 
 
 

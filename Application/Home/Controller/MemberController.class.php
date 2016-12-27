@@ -200,7 +200,7 @@ class MemberController extends Controller {
 			}else{
 
                 $User->token_exptime = time()+60*60*24;//过期时间为24小时后
-                $token = md5(time().'sdc'.$User->password.rand(1,9999));
+                $token = md5(time().'sdc'.$User->email);
                 $User->token = $token;
                 $email = $User->email;
                 $nickname = $User->nickname;
@@ -313,20 +313,21 @@ class MemberController extends Controller {
         }
 
         if(empty($user['token'])){
-            $this->error('操作失败，未知错误！');
+            $this->error('操作失败，未知错误！',U('memberInfo'));
         }
+
+        $data['token'] = md5(time().'sdc'.$user['email']);
+        $data['token_exptime'] = time()+60*60*24;//过期时间为24小时后   
         //$link = $_SERVER['HTTP_HOST']."/home/member/activation?token={$token}";
-        $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$user['token']));
+        $link = U('member/activation@'.$_SERVER['HTTP_HOST'],array('token'=>$data['token']));
 
         $l = $this->sendEmail($user['email'],$user['nickname'],$link); //发送邮件
         if($l){
             //储存token 更新token激活时间
-            $user['token'] = md5(time().'sdc'.$user['password'].rand(1,9999));
-            $user['token_exptime'] = time()+60*60*24;//过期时间为24小时后
-            M('member')->where($where)->save($user);
+            M('member')->where($where)->save($data);
             $this->success('已经发送了激活邮件，请尽快前往邮箱激活！',U('memberInfo'));
         }else{
-            $this->error('操作失败，未知错误！');
+            $this->error('操作失败，未知错误！',U('memberInfo'));
         }
         
 	    
@@ -348,8 +349,9 @@ class MemberController extends Controller {
             $field = 'id,token_exptime,status';
             $userClass = new User();
             $user = $userClass->getUser($where,$field);
+            
             if(!$user){
-                $this->error('未知错误，激活失败！');
+                $this->error('未知错误，激活失败！',U('memberInfo'));
             }
             if($user['status'] == 1){
                 $this->success('已经激活成功了！',U('Index/signin'));
@@ -364,7 +366,7 @@ class MemberController extends Controller {
                 if($n){
                     $this->success('激活成功！',U('Index/index'));
                 }else{
-                    $this->error('未知错误，激活失败！');
+                    $this->error('未知错误，激活失败！',U('memberInfo'));
                 }
                 
             }

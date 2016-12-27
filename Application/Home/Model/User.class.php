@@ -15,7 +15,7 @@ class User{
 	}
 
 	/*
-	 * 根据id修改用户
+	 * 根据id修改用户数据
      * @param array $data  保存的数据
      * @param array $where 条件
 	 */
@@ -33,8 +33,19 @@ class User{
 	 */
 	public function getOrderList($uid,$field){
 		$where['user_id'] = $uid;
-	    $list = M('order')->field($field)->where($where)->order('add_time')->limit(10)->select();
+	    $list = M('order')->field($field)->where($where)->order('add_time desc')->limit(10)->select();
 	    return $list;
+	}
+
+	/*
+	 * 查询订单
+     * @param array $where  组合条件
+     * @param string $field 查询字段
+	 */
+	public function getOrder($where,$field){
+		
+	    $info = M('order')->field($field)->where($where)->find();
+	    return $info;
 	}
 
 
