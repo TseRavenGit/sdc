@@ -1,0 +1,293 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SDC-FOREVER</title>
+<meta name="description" content="Archer - Responsive Landing Page">
+
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="57x57" href="/Public/Home/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/Public/Home/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/Public/Home/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/Public/Home/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/Public/Home/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/Public/Home/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/Public/Home/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/Public/Home/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/Public/Home/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/Public/Home/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/Public/Home/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/Public/Home/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/Public/Home/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/Public/Home/img/favicons/manifest.json">
+<link rel="shortcut icon" href="/Public/Home/img/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="/Public/Home/img/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/Public/Home/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!--Favicon end-->
+
+<link href="/Public/Home/css/bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Home/css/font-awesome.min.css" rel="stylesheet">
+<link href="/Public/Home/css/magnific-popup.css" rel="stylesheet">
+<link href="/Public/Home/css/owl.carousel.css" rel="stylesheet">
+<link href="/Public/Home/css/main.css" rel="stylesheet">
+<style type="text/css" media="screen">
+  *{font-family: "微软雅黑"}
+  .font-fff{color: #ffffff}
+</style>
+</head>
+<body>
+
+<!--hero section-->
+
+<header class="hero-section"> 
+  
+  <!--navigation-->
+  
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="450">
+    <div class="container">
+      <div class="navbar-header"> <a class="navbar-brand" href=""><img class="logo" alt="logo" src="/Public/Home/img/logo.svg"><img class="logo-nav" alt="logo-nav" src="/Public/Home/img/logo-nav.svg"></a> </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden-xs hidden-sm"><a href="#company">公司简介</a></li>
+        <li class="hidden-xs hidden-sm"><a href="#introduction">产品概述</a></li>
+        <li class="hidden-xs hidden-sm"><a href="#sdc">SDC</a></li>
+        <li class="hidden-xs hidden-sm"><a href="<?php echo U('buy');?>">购买</a></li>
+        <li class="hidden-xs hidden-sm"><a href="<?php echo U('member/memberInfo');?>">用户中心</a></li>
+        <?php if(session('uid')): ?><li><a href="javascript:"><?php echo session('nickname');?></a></li>
+        <li class="hidden-xs"><a href="<?php echo U('member/logout');?>"  class="btn btn-nav">退出</a></li>
+        <?php else: ?>
+        <li class="hidden-xs"><a href="<?php echo U('signin');?>">登录</a></li>
+        <li><a href="<?php echo U('signup');?>" class="btn btn-nav">注册</a></li><?php endif; ?>
+        <li class="hidden-md hidden-lg"><a id="toggle"><i class="fa fa-bars fa-2x"></i><i class="fa fa-times fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--navigation end--> 
+  
+  <!--mobile navigation-->
+  
+  <div class="mobile-nav-overlay hidden-md hidden-lg" id="mobile-nav-overlay">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#company">公司简介</a></li>
+        <li><a href="#introduction">产品概述</a></li>
+        <li><a href="#sdc">SDC</a></li>
+        <li><a href="<?php echo U('buy');?>">购买</a></li>
+        <li><a href="<?php echo U('member/memberInfo');?>">用户中心</a></li>
+        <?php if(session('uid')): ?><li class="hidden-xs"><a href="javascript:"><?php echo session('nickname');?></a></li>
+        <li><a href="<?php echo U('member/logout');?>">退出</a></li>
+        <?php else: ?>
+        <li><a href="<?php echo U('signin');?>">登录</a></li><?php endif; ?>
+      </ul>
+    </nav>
+  </div>
+  
+  <!--mobile navigation end--> 
+  
+  <!--welcome message-->
+  
+  <section class="container text-center welcome-message" id="home">
+    <div class="row">
+      <div class="col-md-12" style="height: 200px">
+        <h1>Do you like diamonds?</h1>
+        <h2 style="font-style:italic;font-weight: normal;">Welome to NSDC</h2>
+        <a href="signup.html" class="btn btn-cta-hero btn-sdc-hero">EXPLORE MORE...</a>
+      </div>
+    </div>
+  </section>
+  
+  <!--welcome message end--> 
+  
+</header>
+
+<!--hero section end--> 
+
+
+<!--learn more-->
+
+<div class="learn-more section-spacing">
+  <div class="container">
+    <div class="row" id="company" style="border-bottom: 0">
+      <div class="col-md-6 col-md-push-6">
+        <aside class="text-center">
+          <figure> <img src="/Public/Home/img/learn-more-1.png" alt="learn more"> </figure>
+        </aside>
+      </div>
+      <div class="col-md-6 col-md-pull-6">
+        <article>
+          <h2>neoo星钻石有限公司</h2>
+          <p>neoo星钻石有限公司是一家专注于金刚石制造及分销。我们的一位创始人，Jae Kim，是世界钻石交易所联盟的前成员，他还建立了第一个钻石交易所在韩国。结合尖端的blockchain技术，我们现在把新鲜的光进入钻石行业。</p>
+        </article>
+      </div>
+    </div>
+    <div class="row" id="introduction">
+      <div class="col-md-6">
+        <aside class="text-center">
+          <figure> <img src="/Public/Home/img/learn-more-2.png" alt="learn more"> </figure>
+        </aside>
+      </div>
+      <div class="col-md-6">
+        <article>
+          <h2>钻石行业的概述</h2>
+          <p>几个世纪以来，钻石是一个浪漫的豪华与承诺的象征。即使在衰退的经济周期中，全球钻石开采和贸易仍在继续。我们的毛坯钻石销售主要是厂家的人雕琢成钻石，然后制成首饰饰品的厂家购买，出售给消费者的松散的钻石。 </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--learn more end--> 
+
+
+<!--How it works-->
+
+<section class="how-it-works section-spacing">
+  <div class="container">
+    <header class="section-header text-center">
+      <h2 style="margin-bottom: 20px">我们为什么专业呢？</h2>
+      <p>专业是总部设在美国的配送中心在香港。专业与非洲和俄罗斯的大型钻石矿的直接关系。NDSC正在建立一个钻石切割厂在</p>
+      <p>中国的过程。我们使用钻石直接从煤矿政矿区，它是通过我们的密集型分类与评价过程选择的手。我们的钻石</p>
+      <p>有GIA证书和DSM证书，将全球标准。NDSC计划在每年一百万克拉以上的过程。</p>
+    </header>
+    <div class="row">
+      <div class="col-md-11 center-block"> 
+        
+        <!--step 1-->
+        <div class="row">
+          <div class="col-md-6 col-md-push-6 text-center"> <img src="/Public/Home/img/step-1.png" alt="step-1"> </div>
+          <div class="col-md-6 col-md-pull-6">
+            <div class="step-number"><span>1</span></div>
+            <h4>物理性能</h4>
+            <p>钻石在天然矿物中的硬度最高，是坚硬不可侵犯的物质，是公认的宝石之王。也就是说，钻石是一种密度相当高的碳结晶体。</p>
+          </div>
+        </div>
+        <!--step 1 end--> 
+        
+        <!--step 2-->
+        <div class="row">
+          <div class="col-md-6 text-center"> <img src="/Public/Home/img/step-2.png" alt="step-2"> </div>
+          <div class="col-md-6">
+            <div class="step-number"><span>2</span></div>
+            <h4>化学成分</h4>
+            <p>钻石的化学成分是碳，这在宝石中是唯一由单一元素组成的，属等轴晶系。是目前已知最硬的矿物，绝对硬度是石英的1000倍，刚玉的150倍。</p>
+          </div>
+        </div>
+        <!--step 2 end--> 
+        
+        <!--step 3-->
+        <div class="row">
+          <div class="col-md-6 col-md-push-6 text-center"> <img src="/Public/Home/img/step-3.png" alt="step-3"> </div>
+          <div class="col-md-6 col-md-pull-6">
+            <div class="step-number"><span>3</span></div>
+            <h4>形成原理</h4>
+            <p>
+              碳元素在较高的温度、压力下，结晶形成石墨（黑色），而在高温、极高气压及还原环境（通常来说就是一种缺氧的环境）中则结晶为珍贵的钻石（无色）。
+            </p>
+          </div>
+        </div>
+        <!--step 3 end--> 
+        
+        <!--step 4-->
+        <div class="row">
+          <div class="col-md-6 text-center"> <img src="/Public/Home/img/step-4.png" alt="step-4"> </div>
+          <div class="col-md-6">
+            <div class="step-number"><span>4</span></div>
+            <h4>鉴定标准</h4>
+            <p>
+              衡量一颗钻石品质的标准主要有四个维度，即重量（CARAT）、净度（CLARITY）、色泽（COLOUR）和切工（CUT），也就是通常所说的“4C标准”。这个标准由GIA(美国宝石学院）创立，是目前在世界上最为主流的钻石评价标准。
+            </p>
+          </div>
+        </div>
+        <!--step 4 end--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--How it works end--> 
+
+
+<!--cta-->
+
+<section class="cta section-spacing text-center" style="background-color: #31aff5" id="sdc">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 center-block">
+        <h2 class="font-fff">Diamond + Cryptocurrency = SDC</h2>
+        <p class="font-fff">专业不仅仅是一个钻石权威。随着blockchain技术的出现，我们看到的机会，把这两个令</p>
+        <p class="font-fff">人兴奋的领域。我们自豪地介绍我们自己的blockchain资产，SDC：基于以太</p>
+        <p class="font-fff">坊平台blockchain资产。SDC允许付款瞬时和方便我们的客户，我们选</p>
+        <p class="font-fff">择了它作为唯一的结算工具在专业。伊斯利恩eip20 SDC符合标</p>
+        <p class="font-fff">准，这意味着我们的标记可用于现有的和未来的智能合同。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--cta end--> 
+
+<!--video intro-->
+
+<div class="video-intro section-spacing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-push-6">
+        <aside class="text-center"> <img src="/Public/Home/img/video-intro.jpg" alt="video intro"> <a href="https://vimeo.com/109054393" class="play-btn"><i class="fa fa-play fa-2x"></i> </a> </aside>
+      </div>
+      <div class="col-md-5 col-md-offset-2 col-md-pull-6">
+        <article>
+          <h2>Ethereum: the World Computer</h2>
+          <p style="font-size: 14px">
+            伊斯利恩是一个分散的平台上运行的智能合同：运行程序没有完全停机，检查任何可能的应用，欺诈或第三方干扰。
+这些应用程序运行在一个定制的blockchain，威力巨大的全球共享的基础设施，可以将价值和代表财产所有权。这使开发人员能够创建市场，商店登记债务或承诺，把资金用在很久以前指示一致（如将或期货合约）和许多其他的东西还没有发明出来，没有中间人或交易对手风险。
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--video intro end--> 
+<!--Copyright terms-->
+
+<footer class="copyright-terms">
+  <div class="container">
+    <div class="row">
+      <!-- <small> &copy; 2016 Archer. All rights reserved.</small>  -->
+      
+    </div>
+  </div>
+</footer>
+
+<!--Copyright terms end--> 
+
+<!--contact form modal end--> 
+
+<script src="/Public/Home/js/jquery-2.2.1.min.js"></script> 
+<script src="/Public/Home/js/bootstrap.min.js"></script> 
+<script src="/Public/Home/js/jquery.magnific-popup.min.js"></script> 
+<script src="/Public/Home/js/owl.carousel.min.js"></script> 
+<script src="/Public/Home/js/jquery.waypoints.min.js"></script> 
+<script src="/Public/Home/js/jquery.animateNumber.min.js"></script> 
+<script src="/Public/Home/js/jquery.ajaxchimp.min.js"></script> 
+<script src="/Public/Home/js/tweetie.min.js"></script> 
+<!--[if IE 9]>
+<script src="js/placeholders.min.js"></script>
+<![endif]--> 
+<script src="/Public/Home/js/main.js"></script> 
+<!-- t> 
+
+<script async src="http://platform.twitter.com/widgets.js"></script 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
+
+<script src="/Public/Home/js/gmap.js"></script> -->
+<script src="/Public/Home/js/retina.min.js"></script>
+</body>
+</html>
