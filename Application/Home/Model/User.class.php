@@ -1,7 +1,7 @@
 <?php
 namespace Home\Model;
 use Think\Model;
-final class User{
+class User{
 
 
 	/*

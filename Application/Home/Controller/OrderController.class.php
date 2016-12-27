@@ -6,7 +6,8 @@ class OrderController extends Controller {
     protected $userinfo;
     public function __construct(){
             parent::__construct();
-
+            Vendor('MobPay.MobaoPayClass');
+            
             $this->checkLogin();
     }
 
