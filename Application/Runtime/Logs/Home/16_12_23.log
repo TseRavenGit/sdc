@@ -6063,3 +6063,2709 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
 
+[ 2016-12-23T19:25:31+08:00 ] 119.136.34.165 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+
+[ 2016-12-23T19:25:34+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-12-23T19:25:41+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-12-23T19:25:47+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-12-23T19:25:58+08:00 ] 119.136.34.165 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-12-23T19:26:38+08:00 ] 119.136.34.165 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-12-23T19:26:39+08:00 ] 119.136.34.165 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-12-23T19:26:47+08:00 ] 119.136.34.165 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `member` SET `password`='96e79218965eb72c92a549dd5a330112' WHERE `id` = 12 [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-12-23T19:26:49+08:00 ] 119.136.34.165 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2016-12-23T19:26:50+08:00 ] 119.136.34.165 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-12-23T19:26:55+08:00 ] 119.136.34.165 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `member` SET `password`='e10adc3949ba59abbe56e057f20f883e' WHERE `id` = 12 [ RunTime:0.0062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2016-12-23T19:26:56+08:00 ] 119.136.34.165 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000126s ]
+
+[ 2016-12-23T19:26:59+08:00 ] 119.136.34.165 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-12-23T19:27:03+08:00 ] 119.136.34.165 /index.php/Home/Index/buy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-12-23T19:27:05+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-12-23T19:27:09+08:00 ] 119.136.34.165 /index.php/Home/member/turnOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`balance`,`status` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-12-23T19:27:15+08:00 ] 119.136.34.165 /index.php/Home/index/buy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000123s ]
+
+[ 2016-12-23T19:27:17+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-12-23T19:27:18+08:00 ] 119.136.34.165 /index.php/Home/member/checkListOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`email`,`status` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+
+[ 2016-12-23T19:27:23+08:00 ] 119.136.34.165 /index.php/Home/member/checkVolume.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `volume` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `volume` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `volume` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000160s ]
+
+[ 2016-12-23T19:27:25+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-12-23T19:27:29+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 12 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-12-23T19:27:30+08:00 ] 119.136.34.165 /index.php/Home/member/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-12-23T19:27:32+08:00 ] 119.136.34.165 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-12-23T19:27:33+08:00 ] 119.136.34.165 /index.php/Home/Index/signup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/public/footer.html): failed to open stream: No such file or directory /var/www/sdc/SDC/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-12-23T19:27:36+08:00 ] 119.136.34.165 /index.php/Home/Index/signin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/public/footer.html): failed to open stream: No such file or directory /var/www/sdc/SDC/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-12-23T19:27:54+08:00 ] 119.136.34.165 /index.php/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT `id`,`nickname`,`password`,`email`,`status` FROM `member` WHERE `email` = '769238567@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-12-23T19:28:02+08:00 ] 119.136.34.165 /index.php/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT `id`,`nickname`,`password`,`email`,`status` FROM `member` WHERE `email` = '769238567@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-12-23T19:28:09+08:00 ] 119.136.34.165 /index.php/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT `id`,`nickname`,`password`,`email`,`status` FROM `member` WHERE `email` = '769238567@qq.com' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-12-23T19:28:13+08:00 ] 119.136.34.165 /index.php/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT `id`,`nickname`,`password`,`email`,`status` FROM `member` WHERE `email` = '769238567@qq.com' LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `member` SET `ip`='119.136.34.165' WHERE `email` = '769238567@qq.com' AND `id` = 11 [ RunTime:0.0051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-12-23T19:28:14+08:00 ] 119.136.34.165 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-12-23T19:28:16+08:00 ] 119.136.34.165 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-12-23T19:28:17+08:00 ] 119.136.34.165 /index.php/Home/index/buy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-12-23T19:28:23+08:00 ] 119.136.34.165 /index.php/Home/order/buy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`balance`,`balance_e`,`status` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /var/www/sdc/SDC/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `order` WHERE `order_no` = '2016122354939' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order` (`shop_price`,`shop_num`,`shop_name`,`shop_type`,`shop_total`,`user_id`,`status`,`add_time`,`update_time`,`order_no`) VALUES ('40.00','1000','SDC星钻币','SDC','40000.00','11','1','1482492503','1482492503','2016122354939') [ RunTime:0.0003s ]
+SQL: UPDATE `member` SET `balance_e`='0' WHERE `id` = 11 [ RunTime:0.0002s ]
+SQL: UPDATE `member` SET `balance`='2450' WHERE `id` = 11 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-12-23T19:28:24+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-12-23T19:28:27+08:00 ] 119.136.34.165 /index.php/Home/member/turnOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`balance`,`status` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/5c2f0333cee46827b92600db78f73745.php 第 122 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/5c2f0333cee46827b92600db78f73745.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-12-23T19:28:31+08:00 ] 119.136.34.165 /index.php/Home/Member/turnOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`balance`,`email`,`balance_e` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`balance`,`email`,`balance_e` FROM `member` WHERE `email` = 'tseraven@163.com' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `transaction` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: rules /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 438 行.
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `transaction` (`from_uid`,`to_uid`,`to`,`from`,`amount`,`add_time`) VALUES ('11','12','tseraven@163.com','769238567@qq.com','450.00','1482492511') [ RunTime:0.0002s ]
+SQL: UPDATE `member` SET `balance_e`='525' WHERE ( id=12 ) [ RunTime:0.0002s ]
+SQL: UPDATE `member` SET `balance`='2000' WHERE ( id=11 ) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-12-23T19:28:32+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-12-23T19:28:34+08:00 ] 119.136.34.165 /index.php/Home/member/checkListOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`email`,`status` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `transaction` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `transaction` WHERE (  `to` = '769238567@qq.com' OR `from` = '769238567@qq.com' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `transaction` WHERE (  `to` = '769238567@qq.com' OR `from` = '769238567@qq.com' ) ORDER BY add_time LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-12-23T19:28:38+08:00 ] 119.136.34.165 /index.php/Home/Member/checkListOut/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`email`,`status` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `transaction` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `transaction` WHERE (  `to` = '769238567@qq.com' OR `from` = '769238567@qq.com' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `transaction` WHERE (  `to` = '769238567@qq.com' OR `from` = '769238567@qq.com' ) ORDER BY add_time LIMIT 3,3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000120s ]
+
+[ 2016-12-23T19:28:40+08:00 ] 119.136.34.165 /index.php/Home/Member/checkListOut/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`email`,`status` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `transaction` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `transaction` WHERE (  `to` = '769238567@qq.com' OR `from` = '769238567@qq.com' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `transaction` WHERE (  `to` = '769238567@qq.com' OR `from` = '769238567@qq.com' ) ORDER BY add_time LIMIT 0,3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/03f391bfb453cbe1ef0591057a8d4a48.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-12-23T19:28:41+08:00 ] 119.136.34.165 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-12-23T19:28:43+08:00 ] 119.136.34.165 /index.php/Home/member/checkVolume.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `volume` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `volume` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `volume` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-12-23T19:28:45+08:00 ] 119.136.34.165 /index.php/Home/Member/checkVolume/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `volume` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `volume` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `volume` WHERE `user_id` = 11 ORDER BY add_time LIMIT 3,3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-12-23T19:28:46+08:00 ] 119.136.34.165 /index.php/Home/Member/checkVolume/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `volume` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `volume` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `volume` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-12-23T19:28:49+08:00 ] 119.136.34.165 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 11 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-12-23T19:28:50+08:00 ] 119.136.34.165 /index.php/Home/index/buy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-12-23T19:28:51+08:00 ] 119.136.34.165 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-12-23T20:08:51+08:00 ] 190.83.204.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-12-23T20:08:53+08:00 ] 190.83.204.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2016-12-23T20:12:10+08:00 ] 112.97.57.100 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-12-23T20:12:14+08:00 ] 112.97.57.100 /index.php/Home/Index/signup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/public/footer.html): failed to open stream: No such file or directory /var/www/sdc/SDC/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-12-23T20:12:29+08:00 ] 112.97.57.100 /index.php/Home/Index/signin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/public/footer.html): failed to open stream: No such file or directory /var/www/sdc/SDC/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-12-23T20:12:41+08:00 ] 112.97.57.100 /index.php/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT `id`,`nickname`,`password`,`email`,`status` FROM `member` WHERE `email` = '18665319393@163.com' LIMIT 1   [ RunTime:0.0009s ]
+SQL: UPDATE `member` SET `ip`='112.97.57.100' WHERE `email` = '18665319393@163.com' AND `id` = 17 [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-12-23T20:12:42+08:00 ] 112.97.57.100 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 17 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-12-23T20:12:47+08:00 ] 112.97.57.100 /index.php/Home/index/buy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2016-12-23T20:12:55+08:00 ] 112.97.57.100 /index.php/Home/order/buy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`balance`,`balance_e`,`status` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /var/www/sdc/SDC/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `order` WHERE `order_no` = '2016122372758' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order` (`shop_price`,`shop_num`,`shop_name`,`shop_type`,`shop_total`,`user_id`,`status`,`add_time`,`update_time`,`order_no`) VALUES ('40.00','1000','SDC星钻币','SDC','40000.00','17','1','1482495175','1482495175','2016122372758') [ RunTime:0.0003s ]
+SQL: UPDATE `member` SET `balance_e`='0' WHERE `id` = 17 [ RunTime:0.0002s ]
+SQL: UPDATE `member` SET `balance`='1000' WHERE `id` = 17 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2016-12-23T20:12:56+08:00 ] 112.97.57.100 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 17 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-12-23T20:13:24+08:00 ] 112.97.57.100 /index.php/Home/member/checkVolume.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `volume` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `volume` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `volume` WHERE `user_id` = 17 ORDER BY add_time LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-12-23T20:13:31+08:00 ] 112.97.57.100 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 17 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-12-23T20:13:32+08:00 ] 112.97.57.100 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 17 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-12-23T20:13:37+08:00 ] 112.97.57.100 /index.php/Home/member/turnOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`balance`,`status` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/5c2f0333cee46827b92600db78f73745.php 第 122 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/5c2f0333cee46827b92600db78f73745.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-12-23T20:14:06+08:00 ] 112.97.57.100 /index.php/Home/Member/turnOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`balance`,`email`,`balance_e` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`balance`,`email`,`balance_e` FROM `member` WHERE `email` = '18038071211@163.com' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `transaction` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: rules /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 438 行.
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `transaction` (`from_uid`,`to_uid`,`to`,`from`,`amount`,`add_time`) VALUES ('17','15','18038071211@163.com','18665319393@163.com','100.00','1482495246') [ RunTime:0.0003s ]
+SQL: UPDATE `member` SET `balance_e`='100' WHERE ( id=15 ) [ RunTime:0.0002s ]
+SQL: UPDATE `member` SET `balance`='900' WHERE ( id=17 ) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-12-23T20:14:07+08:00 ] 85.248.227.164 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-12-23T20:14:07+08:00 ] 112.97.57.100 /index.php/Home/member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 17 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: emailGo /var/www/sdc/Application/Home/Controller/MemberController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-12-23T20:14:14+08:00 ] 112.97.57.100 /index.php/Home/member/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2016-12-23T20:14:16+08:00 ] 112.97.57.100 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-12-23T20:14:18+08:00 ] 112.97.57.100 /index.php/Home/Index/signup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/public/footer.html): failed to open stream: No such file or directory /var/www/sdc/SDC/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-12-23T20:14:45+08:00 ] 112.97.57.100 /index.php/Home/Index/signin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/public/footer.html): failed to open stream: No such file or directory /var/www/sdc/SDC/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000113s ]
+
+[ 2016-12-23T20:15:21+08:00 ] 112.97.57.100 /index.php/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /var/www/sdc/SDC/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT `id`,`nickname`,`password`,`email`,`status` FROM `member` WHERE `email` = '18038071211@163.com' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `member` SET `ip`='112.97.57.100' WHERE `email` = '18038071211@163.com' AND `id` = 15 [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-12-23T20:15:22+08:00 ] 112.97.57.100 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 15 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-12-23T20:15:38+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+
+[ 2016-12-23T20:15:48+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-12-23T20:16:00+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+
+[ 2016-12-23T20:16:01+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `member` SET `id`='15',`nickname`='大虾米',`status`='0',`email`='18038071211@163.com',`password`='79bb4ea12dbb474a18f417772eee39d1',`token`='a153f3bf41298a64853d5de611e9e40d',`token_exptime`='1482581761' WHERE `id` = 15 [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-12-23T20:16:12+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000123s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`status`,`token_exptime`,`balance`,`balance_e` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `order` WHERE `user_id` = 15 ORDER BY add_time LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/0e7640095c3df06c02a9218a9ecd8784.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-12-23T20:16:23+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-12-23T20:16:25+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-12-23T20:16:25+08:00 ] 112.97.57.100 /index.php/Home/member/checkVolume.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `volume` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `volume` WHERE `user_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `volume` WHERE `user_id` = 15 ORDER BY add_time LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 124 行.
+NOTIC: [8] Undefined variable: uid /var/www/sdc/Application/Runtime/Cache/Home/57de545a9ca44aacac754cf41c823b7f.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-12-23T20:16:35+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-12-23T20:16:35+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+
+[ 2016-12-23T20:16:35+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-12-23T20:16:46+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-12-23T20:16:46+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-12-23T20:16:46+08:00 ] 112.97.57.100 /index.php/Home/member/checkListOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`email`,`status` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-12-23T20:16:56+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-12-23T20:17:06+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-12-23T20:17:17+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+
+[ 2016-12-23T20:17:18+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-12-23T20:17:28+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-12-23T20:17:39+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+
+[ 2016-12-23T20:17:49+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-12-23T20:17:49+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2016-12-23T20:17:49+08:00 ] 112.97.57.100 /index.php/Home/Member/memberPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Use of undefined constant memberInfo - assumed 'memberInfo' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 123 行.
+NOTIC: [8] Use of undefined constant memberPwd - assumed 'memberPwd' /var/www/sdc/Application/Runtime/Cache/Home/8e7883985005f24477c646a8b6fa4940.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2016-12-23T20:17:59+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-12-23T20:18:09+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fsockopen(): unable to connect to smtp.163.com:25 (Connection timed out) /var/www/sdc/SDC/Library/Org/Email/SMTP.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+
+[ 2016-12-23T20:18:20+08:00 ] 112.97.57.100 /index.php/Home/member/memberRestar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`nickname`,`status`,`email`,`password`,`token` FROM `member` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+
+[ 2016-12-23T20:40:38+08:00 ] 212.117.180.130 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-12-23T20:52:04+08:00 ] 66.249.64.104 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-12-23T21:20:47+08:00 ] 1.34.171.95 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-12-23T22:06:11+08:00 ] 65.44.91.67 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-12-23T22:39:48+08:00 ] 114.85.49.9 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-12-23T22:44:05+08:00 ] 114.85.49.9 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-12-23T22:44:31+08:00 ] 114.85.49.9 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-12-23T22:46:02+08:00 ] 114.85.49.9 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2016-12-23T23:42:15+08:00 ] 104.148.75.114 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Use of undefined constant __APP__ - assumed '__APP__' /var/www/sdc/SDC/Common/functions.php 第 1003 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
